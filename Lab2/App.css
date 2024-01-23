@@ -1,0 +1,125 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #7f7fd5, #86a8e7, #91eae4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+  overflow: hidden;
+}
+
+.App {
+  width: 100%;
+  max-width: 340px; 
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  margin: 20px;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header, .thank-you {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header h2 {
+  font-size: 1.5em;
+  color: #E0E0E0;
+  margin-bottom: 30px;
+}
+
+.form-section label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #E0E0E0;
+}
+
+.form-section select, .form-section input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.5); 
+  color: #fff;
+  border: none;
+  font-size: 1em;
+}
+
+.form-section select option {
+  background: #fff;
+  color: #333; 
+}
+
+.form-section select:focus, .form-section input:focus {
+  outline: none;
+}
+
+.order-summary {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.1em;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.place-order {
+  background: linear-gradient(to right, #00b09b, #96c93d);
+  border: none;
+  padding: 15px;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 15px;
+  font-size: 1.1em;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.place-order:hover {
+  background: linear-gradient(to right, #00b09b, #96c93d);
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.5);
+}
+
+.thank-you p {
+  font-size: 1.5em;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 600px) {
+  .App {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .header h1 {
+    font-size: 2em;
+  }
+
+  .header h2 {
+    font-size: 1.2em;
+  }
+}
