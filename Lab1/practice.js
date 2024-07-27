@@ -1,7 +1,7 @@
 let x = 3
 let y = 2.5
 y = x+y
-let firstName = 'bob'
+let firstName = 'bob' 
 let lastName = 'smith'
 let wholeName = firstName + ' ' + lastName
 console.log('Full name : ' + firstName + ' ' + lastName + ' y = ', y)
